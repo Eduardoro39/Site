@@ -1,11 +1,7 @@
 $(document).ready(function(){
-		$(".professor1").addClass("zoom").addClass("imagembordaClara");
-		$(".professor2").removeClass("zoom");
-		$(".professor3").removeClass("zoom");
-		$(".professor4").removeClass("zoom");
-		$(".professor5").removeClass("zoom");
-		$(".professor6").removeClass("zoom");
-		$(".professor7").removeClass("zoom");
+		$(".professor1").addClass("imagembordaClara");
+		
+		
 		//
 		$(".abrirProfessor1").fadeIn();
 		$(".abrirProfessor2").hide();
@@ -16,13 +12,15 @@ $(document).ready(function(){
 		$(".abrirProfessor7").hide();
 				
 		$(".professor1").click(function(){
-			$(".professor1").addClass("zoom").addClass("imagembordaClara");
-			$(".professor2").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor3").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor4").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor5").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor6").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor7").removeClass("zoom").removeClass("imagembordaClara");
+			window.location.href='#infos';
+			
+			$(".professor1").addClass("imagembordaClara");
+			$(".professor2").removeClass("imagembordaClara");
+			$(".professor3").removeClass("imagembordaClara");
+			$(".professor4").removeClass("imagembordaClara");
+			$(".professor5").removeClass("imagembordaClara");
+			$(".professor6").removeClass("imagembordaClara");
+			$(".professor7").removeClass("imagembordaClara");
 			//
 			$(".abrirProfessor1").fadeIn();
 			$(".abrirProfessor2").hide();
@@ -34,13 +32,15 @@ $(document).ready(function(){
 		});
 			
 		$(".professor2").click(function(){
-			$(".professor1").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor2").addClass("zoom").addClass("imagembordaClara");
-			$(".professor3").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor4").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor5").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor6").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor7").removeClass("zoom").removeClass("imagembordaClara");
+			window.location.href='#infos';
+			
+			$(".professor1").removeClass("imagembordaClara");
+			$(".professor2").addClass("imagembordaClara");
+			$(".professor3").removeClass("imagembordaClara");
+			$(".professor4").removeClass("imagembordaClara");
+			$(".professor5").removeClass("imagembordaClara");
+			$(".professor6").removeClass("imagembordaClara");
+			$(".professor7").removeClass("imagembordaClara");
 			//
 			$(".abrirProfessor1").hide();
 			$(".abrirProfessor2").fadeIn();
@@ -52,13 +52,15 @@ $(document).ready(function(){
 		});
 			
 		$(".professor3").click(function(){
-			$(".professor1").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor2").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor3").addClass("zoom").addClass("imagembordaClara");
-			$(".professor4").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor5").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor6").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor7").removeClass("zoom").removeClass("imagembordaClara");
+			window.location.href='#infos';
+			
+			$(".professor1").removeClass("imagembordaClara");
+			$(".professor2").removeClass("imagembordaClara");
+			$(".professor3").addClass("imagembordaClara");
+			$(".professor4").removeClass("imagembordaClara");
+			$(".professor5").removeClass("imagembordaClara");
+			$(".professor6").removeClass("imagembordaClara");
+			$(".professor7").removeClass("imagembordaClara");
 			//
 			$(".abrirProfessor1").hide();
 			$(".abrirProfessor2").hide();
@@ -70,13 +72,15 @@ $(document).ready(function(){
 		});
 		
 		$(".professor4").click(function(){
-			$(".professor1").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor2").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor3").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor4").addClass("zoom").addClass("imagembordaClara");
-			$(".professor5").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor6").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor7").removeClass("zoom").removeClass("imagembordaClara");
+			window.location.href='#infos';
+			
+			$(".professor1").removeClass("imagembordaClara");
+			$(".professor2").removeClass("imagembordaClara");
+			$(".professor3").removeClass("imagembordaClara");
+			$(".professor4").addClass("imagembordaClara");
+			$(".professor5").removeClass("imagembordaClara");
+			$(".professor6").removeClass("imagembordaClara");
+			$(".professor7").removeClass("imagembordaClara");
 			//
 			$(".abrirProfessor1").hide();
 			$(".abrirProfessor2").hide();
@@ -88,13 +92,15 @@ $(document).ready(function(){
 		});
 		
 		$(".professor5").click(function(){
-			$(".professor1").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor2").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor3").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor4").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor5").addClass("zoom").addClass("imagembordaClara");
-			$(".professor6").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor7").removeClass("zoom").removeClass("imagembordaClara");
+			window.location.href='#infos';
+			
+			$(".professor1").removeClass("imagembordaClara");
+			$(".professor2").removeClass("imagembordaClara");
+			$(".professor3").removeClass("imagembordaClara");
+			$(".professor4").removeClass("imagembordaClara");
+			$(".professor5").addClass("imagembordaClara");
+			$(".professor6").removeClass("imagembordaClara");
+			$(".professor7").removeClass("imagembordaClara");
 			//
 			$(".abrirProfessor1").hide();
 			$(".abrirProfessor2").hide();
@@ -106,13 +112,15 @@ $(document).ready(function(){
 		});
 		
 		$(".professor6").click(function(){
-			$(".professor1").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor2").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor3").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor4").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor5").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor6").addClass("zoom").addClass("imagembordaClara");
-			$(".professor7").removeClass("zoom").removeClass("imagembordaClara");
+			window.location.href='#infos';
+			
+			$(".professor1").removeClass("imagembordaClara");
+			$(".professor2").removeClass("imagembordaClara");
+			$(".professor3").removeClass("imagembordaClara");
+			$(".professor4").removeClass("imagembordaClara");
+			$(".professor5").removeClass("imagembordaClara");
+			$(".professor6").addClass("imagembordaClara");
+			$(".professor7").removeClass("imagembordaClara");
 			//
 			$(".abrirProfessor1").hide();
 			$(".abrirProfessor2").hide();
@@ -124,13 +132,15 @@ $(document).ready(function(){
 		});
 		
 		$(".professor7").click(function(){
-			$(".professor1").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor2").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor3").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor4").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor5").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor6").removeClass("zoom").removeClass("imagembordaClara");
-			$(".professor7").addClass("zoom").addClass("imagembordaClara");
+			window.location.href='#infos';
+			
+			$(".professor1").removeClass("imagembordaClara");
+			$(".professor2").removeClass("imagembordaClara");
+			$(".professor3").removeClass("imagembordaClara");
+			$(".professor4").removeClass("imagembordaClara");
+			$(".professor5").removeClass("imagembordaClara");
+			$(".professor6").removeClass("imagembordaClara");
+			$(".professor7").addClass("imagembordaClara");
 			//
 			$(".abrirProfessor1").hide();
 			$(".abrirProfessor2").hide();

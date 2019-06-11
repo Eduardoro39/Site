@@ -3,15 +3,15 @@
 	<head>
 		<title> Meu Blog - Sobre </title>
 		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 	</head>
 	<body>
 		<section>
 			<header>
 				<img alt="Imagem Do Logo Do Site" src="imagens/logotipo2.png"/>
 			</header>
-			<nav>
+			<nav class="menu">
 				<ul>
 					<li><a href="index.html"> Início </a></li>
 					<li>
@@ -31,14 +31,20 @@
 				</ul>
 			</nav>
 			<main>
-				<h1 class="texto-c"> Coloque o cursor em cima do texto para vê-lo em inglês </h1>
-				<p class="mudar">
-					<span class="portugues">Meu nome é Eduardo Rodrigues, tenho 18 anos, atualmente estou cursando a Fatec Jales no curso de Sistemas Para Internet. Escolhi o curso superior por estar conectado a tecnologia e ao futuro através da Web, tenho grande interesse a novas tecnologias. Desenvolvi este blog para mostrar um pouco do que eu aprendi e que ainda estou aprendendo, durante os poucos meses de faculdade mostro por meio deste blog o que a instituição pode oferecer e também o que eu posso oferecer ao mercado de trabalho.</span>
-					<span class="hover">My name is Eduardo Rodrigues, I am 18 years old, and nowadays I am taking Internet Systems course at Faculdade “Prof. José Camargo” - Fatec Jales. I chose this course because it is connected to Technology and the future through web; I am very fond of new technologies. I have developed this blog in order to show a little bit of the things I have learned and I have been still learning during these few months I’ve been studying in this Institution. Through this blog I’ll show what the institution can offer and also what I can offer to the marketplace.</span>
-				</p>
+				<div class="botoesDasBandeiras">
+					<h1 class="texto-c"> Clique em uma das imagens para mudar a linguagem do texto </h1>
+					<img class="bandeiraBrasil" alt="Desenho mal feito da bandeira do brasil" src="imagens/bandeira_brasil.png"/>
+					<img class="bandeiraEUA" alt="Desenho mal feito da bandeira dos Estados Unidos" src="imagens/bandeira_EUA.png"/>
+					<p>
+						<span class="portugues">Meu nome é Eduardo Rodrigues, tenho 18 anos, atualmente estou cursando a Fatec Jales no curso de Sistemas Para Internet. Escolhi o curso superior por estar conectado a tecnologia e ao futuro através da Web, tenho grande interesse a novas tecnologias. Desenvolvi este blog para mostrar um pouco do que eu aprendi e que ainda estou aprendendo, durante os poucos meses de faculdade mostro por meio deste blog o que a instituição pode oferecer e também o que eu posso oferecer ao mercado de trabalho.</span>
+						<span class="ingles">My name is Eduardo Rodrigues, I am 18 years old, and nowadays I am taking Internet Systems course at Faculdade “Prof. José Camargo” - Fatec Jales. I chose this course because it is connected to Technology and the future through web; I am very fond of new technologies. I have developed this blog in order to show a little bit of the things I have learned and I have been still learning during these few months I’ve been studying in this Institution. Through this blog I’ll show what the institution can offer and also what I can offer to the marketplace.</span>
+					</p>
+				</div>
 			</main>
-			<footer class="pouco_conteudo"> 
-				<span> Copyright &copy; Eduardo Rodrigues, todos os direitos reservados. </span> 
+			<footer> 
+				Copyright &copy; Eduardo Rodrigues, todos os direitos reservados. 
+				<script src="js/jquery.js"></script> 
+				<script src="js/script_jquery_sobre.js"></script> 
 			</footer>
 		</section>
 	</body>
