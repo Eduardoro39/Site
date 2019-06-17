@@ -51,11 +51,14 @@ header{
 .menu a:hover{
 	color:black;
 }
-h1, h2, footer{
-	margin-top:25px;
+h1,h2,h3{
 	text-align:center;
 }
 
+h2{
+	margin:0;
+}
+/* Ajustar os textos de algumas paginas*/
 main p, div p, article p{
 	text-indent: 0.5%;
 	font-size:135%;
@@ -63,7 +66,7 @@ main p, div p, article p{
 	color:gray;
 }
 
-main p, div p{
+div p, main p{
 	margin-left:10%;
 	margin-right:10%;
 }
@@ -72,17 +75,14 @@ div p{
 	margin-top:27%;
 }
 
-/* Pagina Portugues */
-article h1, section h1{
+/* Pagina Portugues e Criação Web */
+article h1, section h2, {
 	margin-bottom:0;
 	font-size:175%;
 	color:gray;
 }
 
-main > article:nth-child(2){
-	margin-bottom:2%;
-}
-/* Fim - Pagina Portugues */
+/* Fim - Pagina Portugues e Criação Web */
 
 div div{
 	text-align:center;
@@ -100,7 +100,7 @@ div div{
 	margin-right:10vw;
 	margin-top:5%;
 	display:grid;
-	grid-template-areas: "professor1 professor2" "professor3 professor4" "professor5 professor6" "professor7 professor7";
+	grid-template-areas:"professor1 professor2" "professor3 professor4" "professor5 professor6" "professor7 professor7";
 	grid-template-rows: 32% 32% 32%;
 }
 
@@ -159,13 +159,12 @@ main section div{
 }
 /* Fim - Pagina Algoritmo*/
 
-/* Pagina Bases Da Internet */
-
-main section h2{
+/* Para as paginas Bases Da Internet E Criação Web*/
+h1,h2,h3{
 	color:gray;
 }
 
-.mainBases section{
+.mainCriaWeb section{
 	margin-left:10%;
 	margin-bottom:2.5%;
 	margin-right:10%;
@@ -173,7 +172,7 @@ main section h2{
 	border-radius:5px 5px 5px 5px;
 }
 
-/* Fim - Pagina Bases Da Internet */
+/* Fim - Pagina Criação Web Da Internet */
 
 /* Efeito Para Usar Com O JQuery*/
 .imagembordaClara{
@@ -204,7 +203,7 @@ footer {
 
 /* Efeito arco iris */
 .texto-c {
-	font-size:175%;
+	font-size:200%;
     -webkit-background-clip: text;
     color: white;
     -webkit-text-fill-color: transparent;
@@ -216,7 +215,7 @@ footer {
     background-image: -o-linear-gradient(left,#ea8711,#d96363,#73a6df,#9085fb,#52ca79);
 }
 
-.botoesDasBandeiras{
+.botoesDasBandeiras, footer{
 	text-align:center;
 }
 .botoesDasBandeiras img{
@@ -231,19 +230,16 @@ footer {
 @media screen and (min-width: 769px){
 	.menu {
 		z-index:5;
-		position:sticky;
+		position:sticky; /* Faz com que o menu fique na tela quando rolar a pagina*/ 
 		top:0;
 		height:70px;
 		background-color:#0098DA;
 	}
 	
 	.menu ul{
-		margin:0;
-		padding:0;
-		list-style:none;
-		position:relative;
 		text-align:center;
 	}
+
 	.menu ul li{
 		display: inline-block;
 		margin-bottom:0;
@@ -264,8 +260,6 @@ footer {
 	}
 	
 	#main img, div div img{
-		border:3px solid darkgray;
-		border-radius:20px 20px 20px 20px;
 		width:10vw;
 		max-width:20vw;
 	}
@@ -273,14 +267,16 @@ footer {
 	#main{
 		margin-left:8vw;
 		margin-right:7vw;
-		margin-top:5%;
-		display:grid;
-		grid-template-areas: "professor1 professor2 professor3 professor4 professor5 professor6 professor7 professor7";
+		grid-template-areas:"professor1 professor2 professor3 professor4 professor5 professor6 professor7 professor7";
 		grid-template-rows: 32%;
 	}
 	
 	.footerPc{
 		position:fixed;
 		bottom:0;
+	}
+	/* Dar uma margem no h1 da pagina index*/
+	.index{  
+		margin-top:125px;
 	}
 }
