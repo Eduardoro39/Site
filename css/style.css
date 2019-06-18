@@ -7,7 +7,7 @@
 header{
 	text-align:center;
 }
-	
+/* Nav */
 .menu ul{
 	margin:0;
 	padding:0;
@@ -51,6 +51,8 @@ header{
 .menu a:hover{
 	color:black;
 }
+/* Fim - Nav*/
+
 h1,h2,h3{
 	text-align:center;
 }
@@ -58,6 +60,7 @@ h1,h2,h3{
 h2{
 	margin:0;
 }
+
 /* Ajustar os textos de algumas paginas*/
 main p, div p, article p{
 	text-indent: 0.5%;
@@ -65,7 +68,7 @@ main p, div p, article p{
 	text-align:justify;
 	color:gray;
 }
-
+/* Da um espaço nos lados dos textos das paginas */
 div p, main p{
 	margin-left:10%;
 	margin-right:10%;
@@ -76,7 +79,7 @@ div p{
 }
 
 /* Pagina Portugues e Criação Web */
-article h1, section h2, {
+article h1, section h2{
 	margin-bottom:0;
 	font-size:175%;
 	color:gray;
@@ -88,13 +91,7 @@ div div{
 	text-align:center;
 	margin-bottom:1.5%;
 }
-
-#main img, div div img{
-	border:3px solid darkgray;
-	border-radius:20px 20px 20px 20px;
-	width:25vw;
-	max-width:30vw;
-}
+/* Grid*/
 #main{
 	margin-left:20vw;
 	margin-right:10vw;
@@ -102,6 +99,13 @@ div div{
 	display:grid;
 	grid-template-areas:"professor1 professor2" "professor3 professor4" "professor5 professor6" "professor7 professor7";
 	grid-template-rows: 32% 32% 32%;
+}
+
+#main img, div div img{
+	border:3px solid darkgray;
+	border-radius:20px 20px 20px 20px;
+	width:25vw;
+	max-width:30vw;
 }
 
 #main img:hover{
@@ -138,7 +142,6 @@ div div{
 }
 
 /* Pagina Algoritmo - E Primeira Parte De Bases também*/
-
 main section img{
 	max-width:80%;
 	margin-bottom:2.5%;
@@ -203,7 +206,7 @@ footer {
 
 /* Efeito arco iris */
 .texto-c {
-	font-size:200%;
+	font-size:2vw;
     -webkit-background-clip: text;
     color: white;
     -webkit-text-fill-color: transparent;
@@ -214,7 +217,7 @@ footer {
     background-image: -ms-linear-gradient(left,#ea8711,#d96363,#73a6df,#9085fb,#52ca79);
     background-image: -o-linear-gradient(left,#ea8711,#d96363,#73a6df,#9085fb,#52ca79);
 }
-
+/* Ajustes nos botoes da pagina sobre*/
 .botoesDasBandeiras, footer{
 	text-align:center;
 }
@@ -222,12 +225,16 @@ footer {
 	margin-top:3%;
 	border-radius:10px 10px 10px 10px;
 }
+.botoesDasBandeiras img:hover{
+	cursor:pointer;
+}
 
 .botoesDasBandeiras p{
 	margin-top:5%;
 }
 
 @media screen and (min-width: 769px){
+	/* Nav */
 	.menu {
 		z-index:5;
 		position:sticky; /* Faz com que o menu fique na tela quando rolar a pagina*/ 
@@ -252,18 +259,13 @@ footer {
 	.menu ul li ul{
 		position:absolute;
 	}
-		
+	/* Aumenta o espaço nos lados dos textos das paginas */
 	div p, main p{
 		margin-top:3%;
 		margin-left:20%;
 		margin-right:20%;
 	}
-	
-	#main img, div div img{
-		width:10vw;
-		max-width:20vw;
-	}
-	
+	/* Grid */
 	#main{
 		margin-left:8vw;
 		margin-right:7vw;
@@ -271,6 +273,12 @@ footer {
 		grid-template-rows: 32%;
 	}
 	
+	#main img, div div img{
+		width:10vw;
+		max-width:20vw;
+	}
+
+	/* Faz o footer ficar fixado no final da pagina*/
 	.footerPc{
 		position:fixed;
 		bottom:0;
@@ -278,5 +286,6 @@ footer {
 	/* Dar uma margem no h1 da pagina index*/
 	.index{  
 		margin-top:125px;
+		margin-bottom:0;
 	}
 }
